@@ -6,7 +6,7 @@ jobs:
   msanose:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout FudanSELab/train-ticket
+      - name: Checkout
         uses: actions/checkout@v2
 
       # Run the analysis on the specified directory.
