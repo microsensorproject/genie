@@ -1,22 +1,13 @@
-name: Test MSANose Action
+name: MicroSensor
 
 on: [push]
 
 jobs:
-  msanose:
+  microsensor:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Run the analysis on the specified directory.
       - name: Perform the smells analysis.
-        id: analysis
-        uses: edson-a-soares/msanose-action@development
-        with:
-          analysis_directory: $GITHUB_WORKSPACE
-
-      # Collect the analysis output.
-      - name: Get the analysis output (e.g., report)
-        run: echo "${{ steps.analysis.outputs.report }}"
-
+        uses: edson-a-soares/microsensor@development
