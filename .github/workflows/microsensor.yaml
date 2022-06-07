@@ -11,3 +11,4 @@ jobs:
 
       - name: Perform the smells analysis.
         uses: edson-a-soares/microsensor@development
+
