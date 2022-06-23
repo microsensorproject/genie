@@ -9,6 +9,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Perform the smells analysis.
-        uses: edson-a-soares/microsensor@development
-
+      - name: Perform static source code analysis
+        uses: microsensorproject/microsensor@development
